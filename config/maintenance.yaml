@@ -1,0 +1,99 @@
+version: 1
+timezone: Asia/Shanghai
+
+principles:
+  - collect_existing_sources_before_writing
+  - official_facts_first
+  - community_sources_for_gaps_and_failures
+  - no_direct_copying
+  - draft_pull_requests_only
+  - human_review_before_merge
+  - visual_assets_required_for_p0
+
+cadence:
+  weekly_discovery:
+    schedule: "Monday 09:00"
+    tasks:
+      - check_official_docs_and_release_notes
+      - find_new_public_tutorials_from_last_7_days
+      - collect_new_user_questions_and_failures
+      - update_sources_registry
+      - update_coverage_matrix
+      - create_discovery_report
+    output: reports/weekly-discovery-YYYY-MM-DD.md
+
+  weekly_draft:
+    schedule: "Wednesday 09:00"
+    max_topics: 2
+    selection:
+      priorities: [P0, P1]
+      minimum_score: 75
+      require_official_source: true
+      prefer_topics_with_community_examples: true
+    tasks:
+      - build_research_pack
+      - create_visual_plan
+      - generate_source_verified_draft
+      - run_content_validation
+      - create_draft_pull_request
+    automatic_merge: false
+
+  monthly_stale_audit:
+    schedule: "first_day_of_month 10:00"
+    tasks:
+      - check_all_external_links
+      - compare_official_docs_with_published_guides
+      - find_model_skill_connector_and_ui_changes
+      - mark_potentially_outdated_guides
+      - propose_update_pull_requests
+    output: reports/monthly-stale-audit-YYYY-MM.md
+
+  quarterly_tested_upgrade:
+    schedule: "first_week_of_quarter"
+    max_guides: 5
+    selection:
+      - highest_traffic_guides
+      - highest_priority_p0_guides
+      - guides_with_many_user_questions
+    tasks:
+      - run_full_manual_test
+      - capture_redacted_screenshots
+      - record_platform_and_version
+      - upgrade_source_verified_to_tested
+
+content_limits:
+  max_new_guides_per_week: 2
+  max_guides_per_pull_request: 2
+  max_automatic_retries: 1
+  no_content_quota: true
+  skip_when_no_high_value_topic: true
+
+staleness_rules:
+  official_ui_or_navigation: 30_days
+  models_skills_connectors: 14_days
+  price_credits_limits: 7_days
+  stable_workflow_principles: 90_days
+  security_and_permissions: 30_days
+
+reports:
+  include:
+    - discovered_sources_count
+    - duplicate_sources_count
+    - new_topic_candidates
+    - coverage_gaps
+    - outdated_guides
+    - broken_links
+    - generated_drafts
+    - required_manual_tests
+    - open_pull_requests
+
+hermes_commands:
+  weekly_discovery: >-
+    /workbuddy-guide-maintainer 执行每周内容发现：先搜集过去 7 天的官方更新和公开教程，
+    更新来源库与覆盖矩阵，不直接发布文章；输出发现报告。
+  weekly_draft: >-
+    /workbuddy-guide-maintainer 从覆盖矩阵中选择最多 2 个 P0/P1 高价值主题，
+    建立证据包和配图计划，生成 B 级图文教程 Draft PR，不要自动合并。
+  monthly_audit: >-
+    /workbuddy-guide-maintainer 执行月度过期检查：核对官方文档、外链、界面、模型、Skill、连接器和权限变化，
+    对受影响教程创建更新 PR，不要自动合并。
