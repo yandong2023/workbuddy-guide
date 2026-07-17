@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">大文件分批处理与断点续跑示意图</title>
+  <desc id="desc">四个批次依次处理，完成状态写入清单，任务中断后从未完成批次继续。</desc>
+  <rect width="1200" height="560" rx="28" fill="#F7F8FC"/>
+  <text x="600" y="55" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#172033">分批处理：中断了，也不用从头再来</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6475">每完成一批，就记录状态、范围和输出文件</text>
+
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <g transform="translate(70,135)">
+      <rect width="235" height="180" rx="22" fill="#ECF8EF" stroke="#81C693" stroke-width="2"/>
+      <circle cx="42" cy="42" r="22" fill="#3B9A58"/>
+      <path d="M31 42 l8 8 l16 -18" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="76" y="49" font-size="22" font-weight="700" fill="#245F34">批次 001</text>
+      <text x="25" y="90" font-size="16" fill="#41634A">范围：第 1—50 页</text>
+      <text x="25" y="119" font-size="16" fill="#41634A">状态：已完成</text>
+      <text x="25" y="148" font-size="15" fill="#41634A">输出：part-001.md</text>
+    </g>
+
+    <path d="M315 225 H355" stroke="#9AA4B2" stroke-width="4"/>
+    <path d="M347 217 L359 225 L347 233" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(365,135)">
+      <rect width="235" height="180" rx="22" fill="#ECF8EF" stroke="#81C693" stroke-width="2"/>
+      <circle cx="42" cy="42" r="22" fill="#3B9A58"/>
+      <path d="M31 42 l8 8 l16 -18" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="76" y="49" font-size="22" font-weight="700" fill="#245F34">批次 002</text>
+      <text x="25" y="90" font-size="16" fill="#41634A">范围：第 51—100 页</text>
+      <text x="25" y="119" font-size="16" fill="#41634A">状态：已完成</text>
+      <text x="25" y="148" font-size="15" fill="#41634A">输出：part-002.md</text>
+    </g>
+
+    <path d="M610 225 H650" stroke="#9AA4B2" stroke-width="4"/>
+    <path d="M642 217 L654 225 L642 233" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(660,135)">
+      <rect width="235" height="180" rx="22" fill="#FFF5E6" stroke="#E5B76D" stroke-width="2"/>
+      <circle cx="42" cy="42" r="22" fill="#D88A19"/>
+      <path d="M42 29 v17 l11 7" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <text x="76" y="49" font-size="22" font-weight="700" fill="#794800">批次 003</text>
+      <text x="25" y="90" font-size="16" fill="#705A36">范围：第 101—150 页</text>
+      <text x="25" y="119" font-size="16" fill="#705A36">状态：处理中</text>
+      <text x="25" y="148" font-size="15" fill="#705A36">当前：第 126 页</text>
+    </g>
+
+    <path d="M905 225 H945" stroke="#9AA4B2" stroke-width="4" stroke-dasharray="9 8"/>
+    <path d="M937 217 L949 225 L937 233" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(955,135)">
+      <rect width="175" height="180" rx="22" fill="#EFF1F5" stroke="#B9C0CB" stroke-width="2"/>
+      <circle cx="42" cy="42" r="22" fill="#8B95A5"/>
+      <text x="42" y="50" text-anchor="middle" font-size="26" font-weight="700" fill="white">…</text>
+      <text x="76" y="49" font-size="21" font-weight="700" fill="#46505E">批次 004</text>
+      <text x="25" y="90" font-size="15" fill="#626B78">范围：151—200 页</text>
+      <text x="25" y="119" font-size="16" fill="#626B78">状态：等待</text>
+      <text x="25" y="148" font-size="14" fill="#626B78">尚未开始</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="110" y="360" width="500" height="145" rx="22" fill="white" stroke="#D7DCE5" stroke-width="2"/>
+    <text x="140" y="398" font-size="22" font-weight="700" fill="#172033">checkpoint/manifest.csv</text>
+    <text x="140" y="431" font-size="15" fill="#586173">001，1—50，done，part-001.md</text>
+    <text x="140" y="458" font-size="15" fill="#586173">002，51—100，done，part-002.md</text>
+    <text x="140" y="485" font-size="15" fill="#B07112">003，101—150，running，第 126 页</text>
+
+    <path d="M640 432 C720 350, 825 350, 910 432" fill="none" stroke="#7253C7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M898 420 L915 434 L895 441" fill="none" stroke="#7253C7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="780" y="375" text-anchor="middle" font-size="18" font-weight="700" fill="#4D358E">任务中断后</text>
+    <text x="780" y="401" text-anchor="middle" font-size="17" fill="#5D5273">读取清单，从批次 003 继续</text>
+
+    <rect x="910" y="380" width="210" height="105" rx="20" fill="#F1ECFF" stroke="#A894E2" stroke-width="2"/>
+    <text x="1015" y="420" text-anchor="middle" font-size="21" font-weight="700" fill="#4A358A">继续运行</text>
+    <text x="1015" y="451" text-anchor="middle" font-size="15" fill="#5B5270">跳过已完成批次</text>
+  </g>
+
+  <text x="600" y="535" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#C14B45">不要让 WorkBuddy 每次都重新扫描和重做已完成内容</text>
+</svg>

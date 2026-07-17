@@ -45,6 +45,7 @@
 - [用 WorkBuddy 整理会议纪要](docs/office/meeting-minutes.md)
 - [用 WorkBuddy 写周报](docs/office/write-weekly-report.md)
 - [用 WorkBuddy 批量重命名文件](docs/office/batch-rename-files.md)
+- [用 WorkBuddy 处理本地电脑大文件：分批、分块与断点续跑](docs/office/process-large-local-files.md)
 
 ### 自动化
 
