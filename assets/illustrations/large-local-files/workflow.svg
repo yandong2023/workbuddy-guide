@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">WorkBuddy 处理本地大文件的六步安全流程</title>
+  <desc id="desc">从清点文件、抽样测试、制定计划、分批处理、记录进度到合并验收的流程图。</desc>
+  <rect width="1200" height="460" rx="28" fill="#F7F8FC"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#172033">大文件不要一次硬跑：用 6 步完成</text>
+  <text x="600" y="86" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6475">每一步都有可检查的结果，失败后可以从中间继续</text>
+
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <g transform="translate(38,125)">
+      <rect width="165" height="220" rx="20" fill="#E8F1FF" stroke="#8AB6FF" stroke-width="2"/>
+      <circle cx="82.5" cy="48" r="26" fill="#3977D7"/>
+      <text x="82.5" y="57" text-anchor="middle" font-size="24" font-weight="700" fill="white">1</text>
+      <text x="82.5" y="100" text-anchor="middle" font-size="20" font-weight="700" fill="#173A6B">先清点</text>
+      <text x="82.5" y="132" text-anchor="middle" font-size="15" fill="#36506F">只看文件名、大小</text>
+      <text x="82.5" y="155" text-anchor="middle" font-size="15" fill="#36506F">页数、行数和格式</text>
+      <text x="82.5" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#C14B45">不改原文件</text>
+    </g>
+
+    <path d="M210 235 H235" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M229 228 L239 235 L229 242" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(245,125)">
+      <rect width="165" height="220" rx="20" fill="#ECF8EF" stroke="#8BCB9A" stroke-width="2"/>
+      <circle cx="82.5" cy="48" r="26" fill="#3B9A58"/>
+      <text x="82.5" y="57" text-anchor="middle" font-size="24" font-weight="700" fill="white">2</text>
+      <text x="82.5" y="100" text-anchor="middle" font-size="20" font-weight="700" fill="#18582A">抽样测试</text>
+      <text x="82.5" y="132" text-anchor="middle" font-size="15" fill="#365E40">先处理 1 小段</text>
+      <text x="82.5" y="155" text-anchor="middle" font-size="15" fill="#365E40">确认模型与 Skill</text>
+      <text x="82.5" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#28713B">先小后大</text>
+    </g>
+
+    <path d="M417 235 H442" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M436 228 L446 235 L436 242" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(452,125)">
+      <rect width="165" height="220" rx="20" fill="#FFF5E6" stroke="#E5B76D" stroke-width="2"/>
+      <circle cx="82.5" cy="48" r="26" fill="#D88A19"/>
+      <text x="82.5" y="57" text-anchor="middle" font-size="24" font-weight="700" fill="white">3</text>
+      <text x="82.5" y="100" text-anchor="middle" font-size="20" font-weight="700" fill="#794800">先看计划</text>
+      <text x="82.5" y="132" text-anchor="middle" font-size="15" fill="#705A36">分成多少批</text>
+      <text x="82.5" y="155" text-anchor="middle" font-size="15" fill="#705A36">每批输出什么</text>
+      <text x="82.5" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#9D650E">确认后再执行</text>
+    </g>
+
+    <path d="M624 235 H649" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M643 228 L653 235 L643 242" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(659,125)">
+      <rect width="165" height="220" rx="20" fill="#F1ECFF" stroke="#A894E2" stroke-width="2"/>
+      <circle cx="82.5" cy="48" r="26" fill="#7253C7"/>
+      <text x="82.5" y="57" text-anchor="middle" font-size="24" font-weight="700" fill="white">4</text>
+      <text x="82.5" y="100" text-anchor="middle" font-size="20" font-weight="700" fill="#3F2C7D">分批处理</text>
+      <text x="82.5" y="132" text-anchor="middle" font-size="15" fill="#554A72">一批完成并检查</text>
+      <text x="82.5" y="155" text-anchor="middle" font-size="15" fill="#554A72">再开始下一批</text>
+      <text x="82.5" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#5A3FA3">避免一次超时</text>
+    </g>
+
+    <path d="M831 235 H856" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M850 228 L860 235 L850 242" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(866,125)">
+      <rect width="135" height="220" rx="20" fill="#E9F8F7" stroke="#79C3BE" stroke-width="2"/>
+      <circle cx="67.5" cy="48" r="26" fill="#248E87"/>
+      <text x="67.5" y="57" text-anchor="middle" font-size="24" font-weight="700" fill="white">5</text>
+      <text x="67.5" y="100" text-anchor="middle" font-size="19" font-weight="700" fill="#155B57">记进度</text>
+      <text x="67.5" y="132" text-anchor="middle" font-size="14" fill="#355F5C">成功 / 失败</text>
+      <text x="67.5" y="155" text-anchor="middle" font-size="14" fill="#355F5C">输出文件路径</text>
+      <text x="67.5" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#1C716B">支持续跑</text>
+    </g>
+
+    <path d="M1008 235 H1033" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1027 228 L1037 235 L1027 242" fill="none" stroke="#9AA4B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(1043,125)">
+      <rect width="120" height="220" rx="20" fill="#FFF0F1" stroke="#DF929A" stroke-width="2"/>
+      <circle cx="60" cy="48" r="26" fill="#C9505B"/>
+      <text x="60" y="57" text-anchor="middle" font-size="24" font-weight="700" fill="white">6</text>
+      <text x="60" y="100" text-anchor="middle" font-size="18" font-weight="700" fill="#742E35">合并验收</text>
+      <text x="60" y="132" text-anchor="middle" font-size="13" fill="#6B4A4E">查漏项</text>
+      <text x="60" y="155" text-anchor="middle" font-size="13" fill="#6B4A4E">抽样复核</text>
+      <text x="60" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#9A3D46">再交付</text>
+    </g>
+  </g>
+
+  <rect x="245" y="378" width="710" height="48" rx="24" fill="#172033"/>
+  <text x="600" y="408" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="white">关键原则：大文件不是“丢进去等结果”，而是“分批完成 + 随时可恢复”</text>
+</svg>
