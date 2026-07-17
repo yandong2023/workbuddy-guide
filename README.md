@@ -22,6 +22,16 @@
 
 后续内容按以下流程维护：**先搜集现成资料 → 去重与核对 → 补全步骤和风险 → 制作原创配图 → 生成 Draft PR → 人工审核和实测**。
 
+## 新增的 5 个完整工作场景
+
+以下教程均按“资料来源 + 完整步骤 + 可复制指令 + 配图 + 验收 + 恢复 + 安全边界”的标准编写：
+
+1. [对比多份 Word/PDF：找出差异、遗漏与冲突](docs/scenarios/documents-and-files/compare-documents.md)
+2. [合并多份 Excel：字段对齐、去重与自动汇总](docs/scenarios/data-and-reporting/merge-excel-files.md)
+3. [竞品调研：从资料搜集到可追溯决策报告](docs/scenarios/research-and-analysis/competitor-research.md)
+4. [公众号文章：从资料、选题到排版草稿](docs/scenarios/marketing-and-content/wechat-article.md)
+5. [用户反馈转产品需求：证据链和优先级边界](docs/scenarios/product-and-design/feedback-to-requirements.md)
+
 ## 推荐阅读顺序
 
 第一次使用 WorkBuddy，可以按这个顺序阅读：
@@ -58,6 +68,11 @@
 - [用 WorkBuddy 写周报](docs/office/write-weekly-report.md)
 - [用 WorkBuddy 批量重命名文件](docs/office/batch-rename-files.md)
 - [用 WorkBuddy 处理本地电脑大文件](docs/office/process-large-local-files.md)
+- [对比多份 Word/PDF](docs/scenarios/documents-and-files/compare-documents.md)
+- [合并多份 Excel](docs/scenarios/data-and-reporting/merge-excel-files.md)
+- [竞品调研](docs/scenarios/research-and-analysis/competitor-research.md)
+- [公众号文章生产](docs/scenarios/marketing-and-content/wechat-article.md)
+- [用户反馈转产品需求](docs/scenarios/product-and-design/feedback-to-requirements.md)
 
 ### 自动化
 
