@@ -1,0 +1,11 @@
+# Repository owner reviews changes by default.
+* @yandong2023
+
+# Content and automation rules require owner review.
+/docs/ @yandong2023
+/sources/ @yandong2023
+/config/ @yandong2023
+/scripts/ @yandong2023
+/.github/ @yandong2023
+/SKILL.md @yandong2023
+/HERMES.md @yandong2023

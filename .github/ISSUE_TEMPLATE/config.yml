@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 开始使用 WorkBuddy Guide
+    url: https://github.com/yandong2023/workbuddy-guide/blob/main/START-HERE.md
+    about: 第一次使用时先看 5 分钟入门路线
+  - name: 查看全场景教程目录
+    url: https://github.com/yandong2023/workbuddy-guide/tree/main/docs/scenarios
+    about: 查找已有教程和计划中的工作场景
+  - name: 安全问题
+    url: https://github.com/yandong2023/workbuddy-guide/blob/main/SECURITY.md
+    about: 不要在公开 Issue 中发布密钥、账号和未脱敏资料
