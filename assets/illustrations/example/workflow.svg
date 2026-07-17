@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">WorkBuddy 教程通用流程示意</title>
+  <desc id="desc">从准备材料、检查输入、确认计划、执行任务到验收结果的五步流程。</desc>
+  <rect width="1200" height="420" fill="#f8fafc"/>
+  <text x="600" y="58" text-anchor="middle" font-size="30" font-family="Arial, sans-serif" font-weight="700" fill="#0f172a">WorkBuddy 教程通用流程</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(55 135)">
+      <rect width="180" height="130" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+      <text x="90" y="52" font-size="22" font-weight="700" fill="#1e3a8a">1. 准备材料</text>
+      <text x="90" y="86" font-size="17" fill="#334155">副本、目录、权限</text>
+    </g>
+    <g transform="translate(285 135)">
+      <rect width="180" height="130" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="90" y="52" font-size="22" font-weight="700" fill="#14532d">2. 检查输入</text>
+      <text x="90" y="86" font-size="17" fill="#334155">清单、小样、风险</text>
+    </g>
+    <g transform="translate(515 135)">
+      <rect width="180" height="130" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <text x="90" y="52" font-size="22" font-weight="700" fill="#78350f">3. 确认计划</text>
+      <text x="90" y="86" font-size="17" fill="#334155">步骤、输出、恢复</text>
+    </g>
+    <g transform="translate(745 135)">
+      <rect width="180" height="130" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+      <text x="90" y="52" font-size="22" font-weight="700" fill="#4c1d95">4. 执行任务</text>
+      <text x="90" y="86" font-size="17" fill="#334155">分批、记录、检查</text>
+    </g>
+    <g transform="translate(975 135)">
+      <rect width="180" height="130" rx="18" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+      <text x="90" y="52" font-size="22" font-weight="700" fill="#7f1d1d">5. 验收结果</text>
+      <text x="90" y="86" font-size="17" fill="#334155">打开、抽查、备份</text>
+    </g>
+  </g>
+  <g stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M235 200 H275"/>
+    <path d="M465 200 H505"/>
+    <path d="M695 200 H735"/>
+    <path d="M925 200 H965"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="600" y="335" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="#475569">高风险操作在执行前确认；失败时停在当前步骤，不直接从头覆盖重做。</text>
+</svg>

@@ -1,12 +1,22 @@
 topic: ""
 slug: ""
 created_at: "YYYY-MM-DD"
+updated_at: "YYYY-MM-DD"
 researcher: "automation"
+coverage_category: ""
+coverage_priority: "P0|P1|P2"
 
 user_problem:
   description: ""
   target_audience: []
   expected_outcome: ""
+  current_pain_points: []
+  success_criteria: []
+
+existing_content:
+  repository_guides: []
+  duplicate_risk: "low|medium|high"
+  content_gap: []
 
 score:
   user_value: 0
@@ -20,18 +30,76 @@ official_sources:
   - url: ""
     title: ""
     published_at: null
+    updated_at: null
     accessed_at: "YYYY-MM-DD"
     relevant_claims: []
+    version_sensitive_claims: []
 
-community_sources: []
+community_sources:
+  - url: ""
+    title: ""
+    author: ""
+    publisher: ""
+    published_at: null
+    accessed_at: "YYYY-MM-DD"
+    useful_for:
+      - workflow_steps
+      - user_language
+      - failure_cases
+    claims_needing_verification: []
+    unique_value: []
+    copying_risk: "low|medium|high"
+
+source_comparison:
+  facts_confirmed_by_official: []
+  community_only_experiences: []
+  conflicts: []
+  outdated_or_suspicious_claims: []
+  missing_steps_in_existing_tutorials: []
 
 verified_facts: []
 conflicting_information: []
 needs_manual_test: []
 version_sensitive_steps: []
+
+workflow_design:
+  recommended_mode: "Ask|Plan|Craft"
+  recommended_model: "auto"
+  required_skills: []
+  required_connectors: []
+  input_materials: []
+  output_files: []
+  safe_workspace_structure: []
+  step_plan: []
+  validation_plan: []
+  rollback_plan: []
+
+visual_plan:
+  minimum_assets: 2
+  assets:
+    - id: workflow
+      type: "svg|screenshot|result-example"
+      purpose: "解释任务整体流程"
+      path: "assets/illustrations/<slug>/workflow.svg"
+      source: "original"
+      needs_manual_capture: false
+    - id: workspace
+      type: "svg|screenshot|result-example"
+      purpose: "解释工作目录或准备材料"
+      path: "assets/illustrations/<slug>/workspace.svg"
+      source: "original"
+      needs_manual_capture: false
+  screenshot_environment:
+    platform: null
+    workbuddy_version: null
+    capture_date: null
+  redaction_required: true
+
 copyright_risks: []
 privacy_and_security_risks: []
+high_risk_actions: []
 
 recommended_action: "reject|candidate|draft"
-recommended_verification: "source-verified|tested"
+recommended_verification: "automated-draft|source-verified|tested"
+recommended_path: "docs/<category>/<slug>.md"
 notes: ""

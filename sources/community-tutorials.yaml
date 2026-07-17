@@ -1,0 +1,284 @@
+version: 1
+updated_at: "2026-07-17"
+
+purpose: >-
+  收集可用于发现选题、核对功能和了解真实问题的公开教程。
+  本文件只保存元数据、主题和研究价值，不保存全文，不允许直接搬运或近似改写。
+
+source_rules:
+  - official_sources_are_primary_for_product_facts
+  - community_sources_are_for_workflows_failures_and_content_gaps
+  - do_not_copy_full_text_or_video_transcripts
+  - every_claim_must_be_rechecked_against_current_product
+  - community_claims_about_price_credits_models_and_limits_are_time_sensitive
+  - preserve_original_url_author_and_publish_date
+  - conflicts_require_human_review
+
+official_sources:
+  - id: official_docs_index
+    title: WorkBuddy 中文文档导航
+    url: https://www.workbuddy.ai/docs/zh/
+    topics: [installation, tasks, results, skills, connectors, automation, troubleshooting]
+    priority: 100
+
+  - id: official_task_bar
+    title: 新建任务栏（Ask / Plan / Craft、模型、目录、技能和权限）
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar
+    topics: [modes, models, workspace, skills, permissions]
+    priority: 100
+
+  - id: official_file_recognition
+    title: 文件内容识别与处理
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/File-Recognition
+    topics: [file_rename, meeting_minutes, video_translation]
+    priority: 100
+
+  - id: official_document_generation
+    title: 文档生成与编辑
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Document-Generation
+    topics: [word, ppt, document_editing]
+    priority: 100
+
+  - id: official_data_analysis
+    title: 数据分析并可视化
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Data-Analysis
+    topics: [excel, csv, charts, research_report]
+    priority: 100
+
+  - id: official_social_media
+    title: 自媒体运营
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Social-Media
+    topics: [xiaohongshu, short_video, content_creation]
+    priority: 100
+
+  - id: official_daily_briefing
+    title: 每日自动推送资讯简报
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Daily-Briefing
+    topics: [automation, email, daily_briefing]
+    priority: 100
+
+  - id: official_remote_assistant
+    title: 远程遥控 WorkBuddy
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Claw-Slack
+    topics: [remote, mobile, file_transfer, coding]
+    priority: 100
+
+  - id: official_google_integration
+    title: Google Calendar 与 Google Drive
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Google-Integration
+    topics: [calendar, drive, connector]
+    priority: 100
+
+  - id: official_local_app
+    title: 零代码制作本地应用
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Local-App
+    topics: [local_app, no_code, development]
+    priority: 100
+
+  - id: official_custom_skills
+    title: 创建自己的 Skills
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
+    topics: [skills, automation, reusable_workflow]
+    priority: 100
+
+  - id: official_ai_self_driven
+    title: AI 自驱动
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/AI-Self-Driven
+    topics: [agentic_workflow, planning, execution]
+    priority: 100
+
+  - id: official_faq
+    title: WorkBuddy 常见问题
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA
+    topics: [login, files, models, compatibility, recovery, errors]
+    priority: 100
+
+community_sources:
+  - id: community_beginner_2657971
+    title: WorkBuddy 新手入门教程：从安装到日常使用的完整指南
+    url: https://developer.cloud.tencent.com/article/2657971
+    publisher: 腾讯云开发者社区
+    published_at: "2026-04-21"
+    topics: [installation, login, credits, wechat, automation]
+    value: high_traffic_beginner_questions
+    reliability: community_needs_verification
+
+  - id: community_full_guide_2664219
+    title: WorkBuddy 从入门到精通
+    url: https://cloud.tencent.com/developer/article/2664219
+    publisher: 腾讯云开发者社区
+    published_at: "2026-05"
+    topics: [modes, remote, skills, automation, connectors, knowledge_base, troubleshooting]
+    value: broad_topic_map
+    reliability: community_needs_verification
+
+  - id: community_office_workflow_2666792
+    title: Work Buddy 新手实战教程：从零上手 AI 高效办公全流程
+    url: https://developer.cloud.tencent.com/article/2666792
+    publisher: 腾讯云开发者社区
+    published_at: "2026-05-10"
+    topics: [weekly_report, meeting_minutes, file_processing, tasks]
+    value: common_office_scenarios
+    reliability: community_needs_verification
+
+  - id: community_skill_library_2682329
+    title: WorkBuddy 实战教程：从零开始打造你的 AI 办公技能库
+    url: https://developer.cloud.tencent.com/article/2682329
+    publisher: 腾讯云开发者社区
+    published_at: "2026-06-04"
+    topics: [skills, documents, excel, ppt, automation]
+    value: skill_workflow_examples
+    reliability: community_needs_verification
+
+  - id: community_automation_2693228
+    title: WorkBuddy 自动化任务实战：搭建每日工作流
+    url: https://developer.cloud.tencent.com/article/2693228
+    publisher: 腾讯云开发者社区
+    published_at: "2026-06-18"
+    topics: [automation, daily_report, scheduled_tasks]
+    value: concrete_automation_examples
+    reliability: community_needs_verification
+
+  - id: community_automation_2707940
+    title: WorkBuddy 自动化实战：用定时任务搭建日常效率工作流
+    url: https://developer.cloud.tencent.com/article/2707940
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07-13"
+    topics: [automation, daily_report, downloads, reminders]
+    value: recent_failures_and_examples
+    reliability: community_needs_verification
+
+  - id: community_automation_2647438
+    title: WorkBuddy 创建自动化任务实战
+    url: https://developer.cloud.tencent.com/article/2647438
+    publisher: 腾讯云开发者社区
+    published_at: "2026-03-29"
+    topics: [automation, schedules, management]
+    value: early_automation_reference
+    reliability: may_be_outdated
+
+  - id: community_competitor_research_2702023
+    title: 用 WorkBuddy 做竞品调研和深度分析
+    url: https://developer.cloud.tencent.com/article/2702023
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07-02"
+    topics: [competitor_research, web_collection, report, ppt, monitoring]
+    value: detailed_end_to_end_workflow
+    reliability: community_claims_require_fact_check
+
+  - id: community_weekly_report_2705960
+    title: WorkBuddy 基于工作记录自动生成周报
+    url: https://developer.cloud.tencent.com/article/2705960
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07-09"
+    topics: [weekly_report, work_log]
+    value: focused_recent_tutorial
+    reliability: community_needs_verification
+
+  - id: community_meeting_minutes_2705931
+    title: WorkBuddy 会议纪要实战：录音转文字并生成正式纪要
+    url: https://developer.cloud.tencent.com/article/2705931
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07-09"
+    topics: [audio, transcript, meeting_minutes, action_items]
+    value: focused_recent_tutorial
+    reliability: community_needs_verification
+
+  - id: community_meeting_minutes_2707812
+    title: 用 WorkBuddy 自动整理会议纪要
+    url: https://developer.cloud.tencent.com/article/2707812
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07-12"
+    topics: [meeting_minutes, markdown, student_team]
+    value: user_language_and_failures
+    reliability: community_needs_verification
+
+  - id: community_wechat_remote_2698849
+    title: 如何绑定手机微信，让桌面助理远程动起来
+    url: https://developer.cloud.tencent.com/article/2698849
+    publisher: 腾讯云开发者社区
+    published_at: "2026-06-26"
+    topics: [wechat, remote, assistant]
+    value: remote_setup_questions
+    reliability: community_needs_verification
+
+  - id: community_remote_2679254
+    title: WorkBuddy 新手指南：从安装到遥控
+    url: https://developer.cloud.tencent.com/article/2679254
+    publisher: 腾讯云开发者社区
+    published_at: "2026-05-31"
+    topics: [installation, windows, remote_control]
+    value: windows_remote_workflow
+    reliability: community_needs_verification
+
+  - id: community_developer_2685965
+    title: WorkBuddy 开发者全流程使用指南
+    url: https://cloud.tencent.com/developer/article/2685965
+    publisher: 腾讯云开发者社区
+    published_at: "2026-06-10"
+    topics: [development, repository, debugging, backend]
+    value: developer_workflow
+    reliability: community_needs_verification
+
+  - id: community_website_2666826
+    title: WorkBuddy 建站实战：从零到上线
+    url: https://cloud.tencent.com/developer/article/2666826
+    publisher: 腾讯云开发者社区
+    published_at: "2026-05-10"
+    topics: [website, local_app, no_code]
+    value: beginner_project_case
+    reliability: community_needs_verification
+
+  - id: community_use_cases_2708273
+    title: 腾讯云 WorkBuddy 到底能干嘛：使用经验分享
+    url: https://developer.cloud.tencent.com/article/2708273
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07"
+    topics: [file_management, meeting, sales_analysis, marketing, research, automation]
+    value: role_and_scenario_discovery
+    reliability: community_needs_verification
+
+  - id: community_product_overview_2680488
+    title: WorkBuddy 产品技术概览与多平台集成指南
+    url: https://developer.cloud.tencent.com/article/2680488
+    publisher: 腾讯云开发者社区
+    published_at: "2026-06-01"
+    topics: [product, integrations, platforms]
+    value: integration_map
+    reliability: community_needs_verification
+
+  - id: community_office_2703916
+    title: WorkBuddy 零基础高效办公实操教程
+    url: https://developer.cloud.tencent.com/article/2703916
+    publisher: 腾讯云开发者社区
+    published_at: "2026-07-06"
+    topics: [files, data, weekly_report, task_planning, automation]
+    value: recent_beginner_language
+    reliability: community_needs_verification
+
+research_workflow:
+  discover:
+    - search_new_articles_from_last_7_days
+    - check_official_docs_and_release_notes
+    - review_open_issues_and_user_questions
+  extract:
+    - title
+    - url
+    - author
+    - publish_date
+    - scenarios
+    - unique_steps
+    - screenshots_present
+    - user_failures
+    - claims_needing_verification
+  synthesize:
+    - compare_with_official_docs
+    - find_missing_steps
+    - design_safer_workflow
+    - write_original_tutorial
+    - create_original_diagrams_or_redacted_screenshots
+  publish:
+    - source_verified_first
+    - draft_pull_request
+    - human_review
+    - upgrade_to_tested_after_reproduction

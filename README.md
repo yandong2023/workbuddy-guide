@@ -10,6 +10,18 @@
 
 **本项目为非官方社区项目，与 WorkBuddy、腾讯及其关联公司不存在隶属、合作或官方授权关系。** “WorkBuddy”等名称和商标归其权利人所有。
 
+## 全场景内容地图
+
+仓库已经建立覆盖职场主要岗位与任务的详细目录：
+
+- [查看 WorkBuddy 全场景教程目录](docs/scenarios/README.md)
+- [查看教程覆盖矩阵](content/coverage-matrix.yaml)
+- [查看已收集的官方与社区教程来源](sources/community-tutorials.yaml)
+- [查看图文教程质量标准](docs/standards/visual-tutorial-standard.md)
+- [查看定时维护计划](config/maintenance.yaml)
+
+后续内容按以下流程维护：**先搜集现成资料 → 去重与核对 → 补全步骤和风险 → 制作原创配图 → 生成 Draft PR → 人工审核和实测**。
+
 ## 推荐阅读顺序
 
 第一次使用 WorkBuddy，可以按这个顺序阅读：
@@ -45,7 +57,7 @@
 - [用 WorkBuddy 整理会议纪要](docs/office/meeting-minutes.md)
 - [用 WorkBuddy 写周报](docs/office/write-weekly-report.md)
 - [用 WorkBuddy 批量重命名文件](docs/office/batch-rename-files.md)
-- [用 WorkBuddy 处理本地电脑大文件：分批、分块与断点续跑](docs/office/process-large-local-files.md)
+- [用 WorkBuddy 处理本地电脑大文件](docs/office/process-large-local-files.md)
 
 ### 自动化
 
@@ -83,15 +95,15 @@
 
 后期由 Hermes 定期维护：
 
-1. 发现官方更新、新教程和高频问题；
-2. 与现有内容去重；
-3. 建立来源证据包；
-4. 生成 Markdown 草稿；
-5. 执行格式、来源、链接和重复度检查；
+1. 每周一发现官方更新、公开教程和高频问题；
+2. 更新来源库和教程覆盖矩阵；
+3. 每周最多选择 2 个高价值主题；
+4. 建立研究证据包和配图计划；
+5. 生成 Markdown 草稿并执行内容检查；
 6. 创建独立分支和 Draft Pull Request；
 7. **不得自动合并到 `main`**。
 
-具体规则见 [SKILL.md](SKILL.md) 和 [HERMES.md](HERMES.md)。
+具体规则见 [SKILL.md](SKILL.md)、[HERMES.md](HERMES.md) 和 [config/maintenance.yaml](config/maintenance.yaml)。
 
 ## 参与贡献
 
@@ -103,15 +115,18 @@
 
 ```text
 workbuddy-guide/
-├── docs/                  # 已发布教程
-├── drafts/                # 自动生成、待审核草稿
-├── templates/             # 教程和证据包模板
-├── sources/               # 信息源配置
-├── config/                # 内容质量规则
-├── scripts/               # 自动检查脚本
-├── .github/               # Actions、Issue 和 PR 模板
-├── SKILL.md               # Hermes/Agent 维护技能
-└── HERMES.md              # Hermes 执行说明
+├── docs/
+│   ├── scenarios/             # 全场景内容地图
+│   └── standards/             # 图文教程标准
+├── content/                   # 教程覆盖矩阵
+├── drafts/                    # 自动生成、待审核草稿
+├── templates/                 # 教程和证据包模板
+├── sources/                   # 官方与社区来源
+├── config/                    # 质量与定时维护规则
+├── scripts/                   # 自动检查脚本
+├── .github/                   # Actions、Issue 和 PR 模板
+├── SKILL.md                   # Hermes/Agent 维护技能
+└── HERMES.md                  # Hermes 执行说明
 ```
 
 ## 许可证

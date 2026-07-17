@@ -1,0 +1,54 @@
+version: 1
+updated_at: "2026-07-17"
+purpose: >-
+  补充 content/coverage-matrix.yaml 中尚未展开的产品设计、业务运营供应链、
+  管理领导三个岗位域。后续可在统一重构覆盖矩阵时合并。
+
+status_values:
+  published: 完整教程已发布
+  needs_upgrade: 已有教程但需补图或补实测
+  sourced: 已有可靠来源，待研究写作
+  planned: 已进入目录，等待来源和实测
+
+categories:
+  product_and_design:
+    label: 产品、需求与设计协作
+    topics:
+      - {slug: feedback-to-requirements, title: 用户反馈转需求列表, priority: P1, status: sourced}
+      - {slug: prd-draft, title: PRD 初稿, priority: P1, status: planned}
+      - {slug: requirements-prioritization, title: 需求拆分和优先级, priority: P1, status: planned}
+      - {slug: user-stories, title: 用户故事和验收标准, priority: P1, status: planned}
+      - {slug: feature-comparison, title: 竞品功能矩阵, priority: P1, status: sourced}
+      - {slug: product-roadmap, title: 产品路线图草稿, priority: P1, status: planned}
+      - {slug: design-brief, title: 设计需求 Brief, priority: P1, status: planned}
+      - {slug: ux-writing, title: UX 文案和错误提示, priority: P2, status: planned}
+      - {slug: prototype-review, title: 原型评审问题清单, priority: P1, status: planned}
+      - {slug: release-help-docs, title: 发布说明和帮助文档, priority: P1, status: sourced}
+
+  operations_and_supply_chain:
+    label: 业务运营、采购与供应链
+    topics:
+      - {slug: sop-generation, title: 标准作业流程 SOP, priority: P1, status: sourced}
+      - {slug: delivery-report, title: 订单和交付日报, priority: P1, status: sourced}
+      - {slug: inventory-analysis, title: 库存和补货分析, priority: P1, status: planned}
+      - {slug: purchase-request, title: 采购需求汇总, priority: P1, status: planned}
+      - {slug: supplier-comparison, title: 供应商对比, priority: P1, status: planned}
+      - {slug: quality-analysis, title: 质检记录和问题分类, priority: P2, status: planned}
+      - {slug: store-operation-report, title: 门店区域运营日报, priority: P1, status: sourced}
+      - {slug: logistics-exceptions, title: 物流异常汇总, priority: P2, status: planned}
+      - {slug: service-issue-trends, title: 客诉和服务问题趋势, priority: P1, status: sourced}
+      - {slug: operations-briefing, title: 周期性经营简报, priority: P1, status: sourced}
+
+  management_and_leadership:
+    label: 管理、战略与团队领导
+    topics:
+      - {slug: department-report, title: 部门周报月报汇总, priority: P1, status: sourced}
+      - {slug: okr-draft, title: OKR 草稿和检查, priority: P1, status: planned}
+      - {slug: business-review, title: 经营复盘, priority: P1, status: sourced}
+      - {slug: decision-memo, title: 决策备忘录, priority: P1, status: planned}
+      - {slug: management-meeting, title: 管理会议材料, priority: P1, status: sourced}
+      - {slug: one-on-one, title: 一对一会议准备, priority: P2, status: planned}
+      - {slug: workload-analysis, title: 团队工作负载分析, priority: P1, status: planned}
+      - {slug: team-risk-summary, title: 团队问题和风险汇总, priority: P1, status: planned}
+      - {slug: strategy-research, title: 战略资料整理, priority: P1, status: sourced}
+      - {slug: annual-plan, title: 年度计划草稿, priority: P1, status: planned}

@@ -1,0 +1,240 @@
+version: 1
+updated_at: "2026-07-17"
+
+status_values:
+  published: 完整教程已发布
+  needs_upgrade: 已有教程但需补图或补实测
+  sourced: 已有可靠来源，待研究写作
+  planned: 已进入目录，等待来源和实测
+  blocked: 信息冲突或当前无法验证
+
+priority_values:
+  P0: 最高频、最能帮助普通用户
+  P1: 重要岗位或进阶场景
+  P2: 长尾和专业场景
+
+default_requirements:
+  official_source_required: true
+  community_cross_check_preferred: true
+  visual_assets_min: 2
+  copyable_prompt_required: true
+  validation_checklist_required: true
+  troubleshooting_required: true
+  privacy_section_required: true
+  automatic_merge: false
+
+categories:
+  getting_started:
+    label: 新手入门
+    topics:
+      - {slug: what-is-workbuddy, title: WorkBuddy 是什么, priority: P0, status: published}
+      - {slug: install-windows, title: Windows 安装, priority: P0, status: needs_upgrade}
+      - {slug: install-macos, title: macOS 安装, priority: P0, status: needs_upgrade}
+      - {slug: work-modes, title: Ask Plan Craft 怎么选, priority: P0, status: needs_upgrade}
+      - {slug: first-task, title: 第一次任务怎么描述, priority: P0, status: needs_upgrade}
+      - {slug: workspace-and-files, title: 工作目录和文件安全, priority: P0, status: needs_upgrade}
+      - {slug: choose-model, title: 模型怎么选, priority: P0, status: needs_upgrade}
+      - {slug: permission-modes, title: 权限模式怎么选, priority: P0, status: needs_upgrade}
+      - {slug: view-results, title: 如何检查结果和文件变更, priority: P0, status: needs_upgrade}
+      - {slug: skills-basics, title: Skill 基础概念和安全边界, priority: P0, status: sourced}
+      - {slug: connectors-basics, title: 连接器基础概念和授权, priority: P1, status: sourced}
+      - {slug: credits-and-usage, title: 积分与使用量说明, priority: P1, status: sourced}
+
+  documents_and_files:
+    label: 文档与文件
+    topics:
+      - {slug: summarize-pdf, title: PDF 总结与页码核对, priority: P0, status: needs_upgrade}
+      - {slug: process-large-local-files, title: 本地大文件分批处理, priority: P0, status: published}
+      - {slug: batch-rename-files, title: 批量重命名, priority: P0, status: needs_upgrade}
+      - {slug: create-edit-word, title: Word 文档生成与修改, priority: P0, status: sourced}
+      - {slug: compare-documents, title: 多份文档对比差异, priority: P0, status: sourced}
+      - {slug: merge-documents, title: 多文档合并报告, priority: P0, status: sourced}
+      - {slug: ocr-scanned-documents, title: 扫描件和图片 OCR, priority: P0, status: sourced}
+      - {slug: translate-video, title: 外文视频转写翻译, priority: P0, status: sourced}
+      - {slug: batch-format-conversion, title: 批量格式转换, priority: P1, status: sourced}
+      - {slug: classify-and-archive-files, title: 文件分类归档, priority: P0, status: sourced}
+      - {slug: extract-fields-from-documents, title: 合同发票简历字段提取, priority: P1, status: planned}
+      - {slug: redact-documents, title: 批量文档脱敏, priority: P1, status: planned}
+      - {slug: find-duplicate-files, title: 查找重复文件, priority: P1, status: planned}
+      - {slug: build-document-index, title: 文件夹目录和索引, priority: P1, status: planned}
+
+  data_and_reporting:
+    label: 数据、表格与汇报
+    topics:
+      - {slug: excel-analysis, title: Excel 分析, priority: P0, status: needs_upgrade}
+      - {slug: clean-excel-data, title: Excel 数据清洗, priority: P0, status: sourced}
+      - {slug: merge-excel-files, title: 多表合并, priority: P0, status: sourced}
+      - {slug: create-charts, title: 数据可视化图表, priority: P0, status: sourced}
+      - {slug: sales-analysis, title: 销售经营分析, priority: P0, status: sourced}
+      - {slug: data-to-ppt, title: 数据报告转 PPT, priority: P0, status: sourced}
+      - {slug: scheduled-report, title: 周月自动报表, priority: P0, status: sourced}
+      - {slug: web-data-collection, title: 网页数据搜集结构化, priority: P0, status: sourced}
+      - {slug: large-csv, title: 大型 CSV 分块处理, priority: P1, status: needs_upgrade}
+      - {slug: survey-analysis, title: 问卷数据分析, priority: P1, status: planned}
+      - {slug: ad-performance, title: 广告投放分析, priority: P1, status: planned}
+      - {slug: ecommerce-analysis, title: 电商订单退款分析, priority: P1, status: planned}
+      - {slug: budget-analysis, title: 预算执行分析, priority: P1, status: planned}
+      - {slug: website-analytics, title: 网站访问与内容表现, priority: P1, status: planned}
+
+  meetings_and_projects:
+    label: 会议与项目
+    topics:
+      - {slug: meeting-minutes, title: 会议纪要, priority: P0, status: needs_upgrade}
+      - {slug: audio-to-minutes, title: 录音转写成正式纪要, priority: P0, status: sourced}
+      - {slug: minutes-to-tasks, title: 纪要转行动项, priority: P0, status: sourced}
+      - {slug: merge-meeting-notes, title: 多份会议记录合并, priority: P0, status: needs_upgrade}
+      - {slug: project-planning, title: 项目计划拆解, priority: P0, status: sourced}
+      - {slug: project-status-report, title: 项目周报和进度简报, priority: P0, status: needs_upgrade}
+      - {slug: risk-register, title: 项目风险清单, priority: P1, status: planned}
+      - {slug: portfolio-status, title: 多项目进度汇总, priority: P1, status: planned}
+      - {slug: retrospective, title: 项目复盘报告, priority: P1, status: sourced}
+      - {slug: requirements-to-tasks, title: 需求文档拆研发任务, priority: P1, status: planned}
+      - {slug: meeting-agenda, title: 会前议程和问题清单, priority: P1, status: planned}
+      - {slug: handover-documentation, title: 项目知识移交, priority: P1, status: planned}
+
+  research_and_analysis:
+    label: 调研与决策
+    topics:
+      - {slug: competitor-research, title: 竞品调研完整流程, priority: P0, status: sourced}
+      - {slug: industry-research, title: 行业研究报告, priority: P0, status: sourced}
+      - {slug: market-sizing, title: 市场规模资料整理, priority: P1, status: planned}
+      - {slug: feedback-analysis, title: 用户反馈和评论分析, priority: P0, status: sourced}
+      - {slug: interview-synthesis, title: 访谈洞察提炼, priority: P0, status: planned}
+      - {slug: opportunity-analysis, title: 产品需求机会分析, priority: P0, status: planned}
+      - {slug: fact-checking, title: 多来源事实核查, priority: P0, status: planned}
+      - {slug: research-to-report, title: 调研结果生成报告和 PPT, priority: P0, status: sourced}
+      - {slug: competitor-monitoring, title: 竞品定期监控, priority: P0, status: sourced}
+      - {slug: vendor-research, title: 供应商对比, priority: P1, status: planned}
+      - {slug: policy-research, title: 政策法规资料研究, priority: P1, status: planned}
+      - {slug: decision-memo, title: 决策备忘录, priority: P1, status: planned}
+
+  marketing_and_content:
+    label: 营销与内容
+    topics:
+      - {slug: xiaohongshu-content, title: 小红书内容生成, priority: P0, status: sourced}
+      - {slug: short-video-script, title: 短视频脚本分镜, priority: P0, status: sourced}
+      - {slug: wechat-article, title: 公众号文章, priority: P0, status: sourced}
+      - {slug: repurpose-product-content, title: 产品资料多平台改写, priority: P0, status: sourced}
+      - {slug: content-idea-bank, title: 内容选题库, priority: P0, status: planned}
+      - {slug: campaign-plan, title: 营销活动方案, priority: P0, status: sourced}
+      - {slug: poster-brief, title: 海报视觉需求说明, priority: P1, status: sourced}
+      - {slug: content-calendar, title: 内容日历自动化, priority: P1, status: planned}
+      - {slug: seo-content-cluster, title: SEO 关键词与内容聚类, priority: P1, status: planned}
+      - {slug: live-stream-script, title: 直播脚本, priority: P1, status: planned}
+      - {slug: product-launch, title: 产品发布内容, priority: P1, status: planned}
+      - {slug: content-performance-report, title: 内容数据周报, priority: P1, status: planned}
+
+  sales_and_customer:
+    label: 销售与客户
+    topics:
+      - {slug: customer-profile, title: 客户资料整理, priority: P1, status: planned}
+      - {slug: account-research, title: 拜访前客户研究, priority: P1, status: sourced}
+      - {slug: sales-call-notes, title: 销售通话纪要, priority: P1, status: sourced}
+      - {slug: follow-up-message, title: 跟进消息草稿, priority: P1, status: planned}
+      - {slug: sales-funnel, title: 销售漏斗分析, priority: P1, status: sourced}
+      - {slug: customer-feedback, title: 客户反馈分析, priority: P1, status: sourced}
+      - {slug: support-knowledge-base, title: 客服知识库, priority: P1, status: planned}
+      - {slug: ticket-triage, title: 工单分级和摘要, priority: P1, status: planned}
+      - {slug: customer-success-report, title: 客户成功月报, priority: P1, status: planned}
+      - {slug: proposal-draft, title: 售前方案和报价材料, priority: P1, status: sourced}
+
+  hr_admin_finance:
+    label: HR、行政与财务
+    topics:
+      - {slug: resume-screening, title: 简历批量整理对比, priority: P1, status: planned}
+      - {slug: interview-assistant, title: 面试问题和记录, priority: P1, status: planned}
+      - {slug: recruiting-funnel, title: 招聘漏斗分析, priority: P1, status: sourced}
+      - {slug: hr-documents, title: HR 通知制度培训材料, priority: P1, status: sourced}
+      - {slug: invoice-expense, title: 发票和报销明细, priority: P1, status: sourced}
+      - {slug: budget-analysis, title: 预算和收支分析, priority: P1, status: sourced}
+      - {slug: vendor-comparison, title: 供应商报价对比, priority: P1, status: planned}
+      - {slug: asset-inventory, title: 固定资产盘点, priority: P2, status: planned}
+      - {slug: admin-report, title: 行政日报月报, priority: P2, status: planned}
+      - {slug: attendance-check, title: 考勤异常检查, priority: P2, status: planned}
+
+  automation_and_integrations:
+    label: 自动化与集成
+    topics:
+      - {slug: create-automation, title: 创建定时自动化, priority: P0, status: needs_upgrade}
+      - {slug: daily-briefing, title: 每日资讯简报, priority: P0, status: needs_upgrade}
+      - {slug: daily-work-report, title: 每日工作日报, priority: P0, status: sourced}
+      - {slug: weekly-summary, title: 每周工作总结, priority: P0, status: sourced}
+      - {slug: organize-downloads, title: 下载目录整理, priority: P0, status: sourced}
+      - {slug: monitor-competitors, title: 竞品行业监控, priority: P0, status: sourced}
+      - {slug: qq-mail-briefing, title: QQ 邮箱简报, priority: P1, status: sourced}
+      - {slug: wechat-remote, title: 微信远程下任务, priority: P0, status: sourced}
+      - {slug: work-platform-assistants, title: 企微飞书钉钉助理, priority: P1, status: sourced}
+      - {slug: google-integration, title: Google Calendar Drive, priority: P1, status: sourced}
+      - {slug: global-platforms, title: Slack Telegram Discord, priority: P2, status: sourced}
+      - {slug: automation-recovery, title: 自动化失败重试, priority: P0, status: planned}
+
+  development_and_it:
+    label: 开发与 IT
+    topics:
+      - {slug: local-app, title: 零代码本地应用, priority: P1, status: sourced}
+      - {slug: software-project-plan, title: 软件项目计划, priority: P1, status: sourced}
+      - {slug: repository-overview, title: 代码仓库说明, priority: P1, status: sourced}
+      - {slug: debugging-workflow, title: Bug 排查修复, priority: P1, status: sourced}
+      - {slug: code-change-report, title: 代码变更日报, priority: P1, status: sourced}
+      - {slug: technical-documentation, title: 技术文档生成, priority: P1, status: sourced}
+      - {slug: log-analysis, title: 日志错误分析, priority: P1, status: planned}
+      - {slug: data-format-conversion, title: 数据格式批量转换, priority: P1, status: planned}
+      - {slug: custom-skill, title: 创建自定义 Skill, priority: P1, status: needs_upgrade}
+      - {slug: ai-self-driven, title: AI 自驱动任务, priority: P1, status: sourced}
+
+  legal_and_compliance:
+    label: 法务与合规
+    topics:
+      - {slug: contract-summary, title: 合同条款摘要, priority: P1, status: planned}
+      - {slug: contract-diff, title: 合同版本差异, priority: P1, status: planned}
+      - {slug: contract-risk-check, title: 合同风险清单草稿, priority: P1, status: planned}
+      - {slug: contract-register, title: 合同台账, priority: P1, status: planned}
+      - {slug: policy-research, title: 政策法规整理, priority: P1, status: planned}
+      - {slug: privacy-inventory, title: 隐私与数据清单, priority: P2, status: planned}
+      - {slug: compliance-checklist, title: 合规检查清单, priority: P2, status: planned}
+      - {slug: bid-document-check, title: 招投标文件检查, priority: P2, status: planned}
+
+  personal_productivity:
+    label: 个人效率与知识管理
+    topics:
+      - {slug: daily-tasks, title: 每日待办, priority: P1, status: sourced}
+      - {slug: weekly-plan, title: 一周工作计划, priority: P1, status: sourced}
+      - {slug: email-assistant, title: 邮件摘要和回复草稿, priority: P1, status: planned}
+      - {slug: personal-knowledge-base, title: 个人知识库, priority: P1, status: planned}
+      - {slug: reading-notes, title: 阅读清单和笔记, priority: P2, status: planned}
+      - {slug: calendar-drive, title: 日历和网盘协作, priority: P1, status: sourced}
+      - {slug: personal-briefing, title: 个人每日简报, priority: P1, status: needs_upgrade}
+      - {slug: work-log, title: 工作记录自动沉淀, priority: P1, status: planned}
+      - {slug: goal-planning, title: 长期目标拆解, priority: P2, status: planned}
+
+  education_and_research:
+    label: 教学、学习与研究
+    topics:
+      - {slug: course-materials, title: 课程资料转讲义, priority: P1, status: sourced}
+      - {slug: video-course-notes, title: 长视频课程笔记, priority: P1, status: sourced}
+      - {slug: compare-readings, title: 多篇资料对比阅读, priority: P1, status: planned}
+      - {slug: research-library, title: 研究资料库, priority: P1, status: planned}
+      - {slug: teaching-ppt, title: 教学培训 PPT, priority: P1, status: sourced}
+      - {slug: exercise-generation, title: 练习题生成, priority: P2, status: planned}
+      - {slug: study-plan, title: 学习计划, priority: P2, status: planned}
+      - {slug: qualitative-analysis, title: 质性资料整理, priority: P1, status: planned}
+      - {slug: research-presentation, title: 研究汇报 PPT, priority: P1, status: sourced}
+
+  security_and_troubleshooting:
+    label: 安全与排障
+    topics:
+      - {slug: security-basics, title: 安全使用总指南, priority: P0, status: planned}
+      - {slug: redact-sensitive-data, title: 敏感数据脱敏, priority: P0, status: planned}
+      - {slug: full-access-risks, title: 完全访问风险, priority: P0, status: needs_upgrade}
+      - {slug: skill-security-review, title: Skill 安全审查, priority: P0, status: needs_upgrade}
+      - {slug: connector-permissions, title: 连接器授权撤销, priority: P0, status: sourced}
+      - {slug: file-recovery, title: 文件误删误移动恢复, priority: P0, status: sourced}
+      - {slug: duplicate-automation, title: 自动化重复执行, priority: P0, status: planned}
+      - {slug: usage-consumption, title: 积分额度异常, priority: P1, status: sourced}
+      - {slug: model-errors, title: 模型不可用和输出不完整, priority: P0, status: sourced}
+      - {slug: version-changes, title: 更新后功能入口变化, priority: P0, status: sourced}
+      - {slug: login-failed, title: 登录失败, priority: P0, status: needs_upgrade}
+      - {slug: cannot-read-files, title: 无法读取文件, priority: P0, status: needs_upgrade}
+      - {slug: task-stuck, title: 任务卡住, priority: P0, status: needs_upgrade}
+      - {slug: generated-file-cannot-open, title: 文件打不开, priority: P0, status: needs_upgrade}
+      - {slug: workspace-missing-after-update, title: 工作空间不见, priority: P0, status: needs_upgrade}

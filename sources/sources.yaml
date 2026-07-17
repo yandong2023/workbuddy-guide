@@ -1,21 +1,36 @@
-version: 1
+version: 2
 updated_at: "2026-07-17"
 
 principles:
   - official_first
+  - collect_existing_sources_before_writing
   - collect_metadata_not_full_text
   - respect_robots_and_platform_terms
   - cite_original_source
   - third_party_requires_rewrite_and_fact_check
   - conflicting_information_requires_human_review
+  - search_snippets_are_discovery_only
+  - prices_models_credits_and_limits_are_time_sensitive
+
+community_registry_file: sources/community-tutorials.yaml
+coverage_matrix_file: content/coverage-matrix.yaml
 
 sources:
-  - id: workbuddy_official_docs
-    name: WorkBuddy 官方文档
+  - id: workbuddy_official_docs_zh
+    name: WorkBuddy 中文文档导航
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/zh/
+    language: zh-CN
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_official_docs_en
+    name: WorkBuddy English Documentation
     type: official_documentation
     url: https://www.workbuddy.ai/docs/workbuddy/
-    language: zh-CN/en
-    priority: 100
+    language: en
+    priority: 90
     enabled: true
     check_frequency: weekly
 
@@ -28,12 +43,130 @@ sources:
     enabled: true
     check_frequency: weekly
 
-  - id: workbuddy_faq
+  - id: workbuddy_task_bar_zh
+    name: 新建任务栏：模式、模型、目录、技能和权限
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar
+    language: zh-CN
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_faq_zh
+    name: WorkBuddy 中文常见问题
+    type: official_faq
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA
+    language: zh-CN
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_faq_en
     name: WorkBuddy FAQ
     type: official_faq
     url: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA
     language: en
-    priority: 95
+    priority: 90
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_file_recognition_zh
+    name: 文件内容识别与处理
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/File-Recognition
+    language: zh-CN
+    topics: [file_rename, meeting_minutes, video_translation]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_document_generation_zh
+    name: 文档生成与编辑
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Document-Generation
+    language: zh-CN
+    topics: [word, ppt, document_editing]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_data_analysis_zh
+    name: 数据分析并可视化
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Data-Analysis
+    language: zh-CN
+    topics: [excel, csv, charts, report]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_social_media_zh
+    name: 自媒体运营
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Social-Media
+    language: zh-CN
+    topics: [xiaohongshu, short_video, content]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_daily_briefing_zh
+    name: 每日自动推送资讯简报
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Daily-Briefing
+    language: zh-CN
+    topics: [automation, email, briefing]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_remote_zh
+    name: 远程遥控 WorkBuddy
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Claw-Slack
+    language: zh-CN
+    topics: [remote, mobile, file_transfer]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_google_integration_zh
+    name: Google Calendar 与 Google Drive
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Google-Integration
+    language: zh-CN
+    topics: [calendar, drive, connector]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_local_app_zh
+    name: 零代码制作本地应用
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Local-App
+    language: zh-CN
+    topics: [local_app, development]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_create_skills_zh
+    name: 创建自己的 Skills
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
+    language: zh-CN
+    topics: [skills, reusable_workflow]
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_ai_self_driven_zh
+    name: AI 自驱动
+    type: official_practice
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/AI-Self-Driven
+    language: zh-CN
+    topics: [agentic_workflow, planning, execution]
+    priority: 100
     enabled: true
     check_frequency: weekly
 
@@ -55,20 +188,34 @@ sources:
     enabled: true
     check_frequency: weekly
 
-  - id: workbuddy_create_skills_zh
-    name: 创建自己的 Skills
-    type: official_documentation
-    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
-    language: zh-CN
-    priority: 95
+  - id: github_workbuddy_search
+    name: GitHub WorkBuddy 相关项目与 Skill 搜索
+    type: community_code
+    queries:
+      - "WorkBuddy skill tutorial"
+      - "WorkBuddy automation"
+      - "WorkBuddy OpenClaw skill"
+    priority: 60
     enabled: true
     check_frequency: weekly
+    manual_review_required: true
 
-  - id: github_workbuddy_search
-    name: GitHub WorkBuddy 相关项目搜索
-    type: community_code
-    query: "WorkBuddy skill tutorial"
-    priority: 60
+  - id: tencent_cloud_community_search
+    name: 腾讯云开发者社区 WorkBuddy 教程发现
+    type: discovery_only
+    domain: developer.cloud.tencent.com
+    queries:
+      - "WorkBuddy 教程"
+      - "WorkBuddy 自动化"
+      - "WorkBuddy 会议纪要"
+      - "WorkBuddy 周报"
+      - "WorkBuddy 竞品调研"
+      - "WorkBuddy 文件整理"
+      - "WorkBuddy Excel"
+      - "WorkBuddy PPT"
+      - "WorkBuddy 微信 远程"
+      - "WorkBuddy Skill"
+    priority: 70
     enabled: true
     check_frequency: weekly
     manual_review_required: true
@@ -80,12 +227,51 @@ sources:
       - "WorkBuddy 教程"
       - "WorkBuddy 怎么用"
       - "WorkBuddy 报错"
-      - "WorkBuddy Skill"
-      - "WorkBuddy Excel"
-      - "WorkBuddy PPT"
+      - "WorkBuddy 文件打不开"
+      - "WorkBuddy 任务卡住"
+      - "WorkBuddy 自动化失败"
+      - "WorkBuddy Skill 安装"
+      - "WorkBuddy 连接器"
+      - "WorkBuddy 微信 助理"
+      - "WorkBuddy 竞品分析"
+      - "WorkBuddy 自媒体"
+      - "WorkBuddy 数据分析"
     priority: 40
     enabled: true
     check_frequency: weekly
+    manual_review_required: true
+
+  - id: role_based_discovery
+    name: 岗位场景发现
+    type: discovery_only
+    query_templates:
+      - "WorkBuddy {role} 教程"
+      - "WorkBuddy {task} 实战"
+    roles:
+      - 行政
+      - HR
+      - 财务
+      - 销售
+      - 客服
+      - 市场
+      - 运营
+      - 产品经理
+      - 项目经理
+      - 开发者
+      - 教师
+      - 研究人员
+    tasks:
+      - 文件整理
+      - 报表
+      - 合同
+      - 发票
+      - 会议纪要
+      - 竞品调研
+      - 内容生产
+      - 自动化
+    priority: 35
+    enabled: true
+    check_frequency: monthly
     manual_review_required: true
 
 collection_policy:
@@ -94,12 +280,31 @@ collection_policy:
     - url
     - source_type
     - author
+    - publisher
     - published_at
+    - updated_at
     - discovered_at
     - short_summary
+    - scenarios
+    - unique_steps
+    - screenshots_present
+    - user_failures
     - relevant_claims
+    - claims_needing_verification
   do_not_save:
     - full_paywalled_article
     - full_video_transcript
+    - copyrighted_full_text
     - personal_information
     - authentication_data
+
+review_policy:
+  official_source:
+    use_for: [feature_facts, navigation, permissions, supported_integrations]
+    still_requires_version_check: true
+  community_source:
+    use_for: [workflow_ideas, failures, prompts, user_language, content_gaps]
+    cannot_prove: [official_support, security, exact_limits, pricing, model_availability]
+  search_snippet:
+    use_for: [discover_url]
+    cannot_be_cited_as_final_evidence: true
