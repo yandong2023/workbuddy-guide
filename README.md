@@ -10,39 +10,73 @@
 
 **本项目为非官方社区项目，与 WorkBuddy、腾讯及其关联公司不存在隶属、合作或官方授权关系。** “WorkBuddy”等名称和商标归其权利人所有。
 
-## 从这里开始
+## 推荐阅读顺序
+
+第一次使用 WorkBuddy，可以按这个顺序阅读：
+
+1. [WorkBuddy 是什么](docs/getting-started/what-is-workbuddy.md)
+2. 根据系统安装：[Windows](docs/getting-started/install-windows.md) / [macOS](docs/getting-started/install-macos.md)
+3. [Ask、Plan、Craft 怎么选](docs/getting-started/work-modes.md)
+4. [第一次任务怎么描述](docs/getting-started/first-task.md)
+5. [工作目录怎么设置](docs/getting-started/workspace-and-files.md)
+6. [模型怎么选](docs/getting-started/choose-model.md)
+7. [权限模式怎么选](docs/getting-started/permission-modes.md)
+8. [任务完成后怎么检查结果](docs/getting-started/view-results.md)
+
+## 完整教程目录
 
 ### 新手入门
 
-- [WorkBuddy 是什么](docs/getting-started/what-is-workbuddy.md)
+- [WorkBuddy 是什么：它和普通 AI 聊天有什么不同](docs/getting-started/what-is-workbuddy.md)
+- [Windows 安装 WorkBuddy](docs/getting-started/install-windows.md)
+- [macOS 安装 WorkBuddy](docs/getting-started/install-macos.md)
+- [Ask、Plan、Craft 三种模式怎么选](docs/getting-started/work-modes.md)
 - [第一次任务怎么描述](docs/getting-started/first-task.md)
+- [工作目录怎么设置](docs/getting-started/workspace-and-files.md)
+- [模型怎么选](docs/getting-started/choose-model.md)
 - [权限模式怎么选](docs/getting-started/permission-modes.md)
+- [任务完成后怎么看结果](docs/getting-started/view-results.md)
 
 ### 办公场景
 
 - [用 WorkBuddy 分析 Excel](docs/office/excel-analysis.md)
 - [用 WorkBuddy 制作 PPT](docs/office/create-ppt.md)
+- [用 WorkBuddy 总结 PDF](docs/office/summarize-pdf.md)
+- [用 WorkBuddy 整理会议纪要](docs/office/meeting-minutes.md)
+- [用 WorkBuddy 写周报](docs/office/write-weekly-report.md)
+- [用 WorkBuddy 批量重命名文件](docs/office/batch-rename-files.md)
 
-### 自动化与 Skills
+### 自动化
 
 - [自动化教程目录](docs/automation/README.md)
+- [WorkBuddy 自动化怎么创建](docs/automation/create-automation.md)
+- [创建每日资讯简报](docs/automation/daily-briefing.md)
+
+### Skills
+
 - [Skills 教程目录](docs/skills/README.md)
-- [创建自己的 Skill](docs/skills/create-custom-skill.md)
+- [Skill 怎么安装、更新和卸载](docs/skills/install-manage-skills.md)
+- [如何创建自己的 Skill](docs/skills/create-custom-skill.md)
 
 ### 常见问题
 
 - [常见问题目录](docs/troubleshooting/README.md)
-- [任务执行前总是询问权限怎么办](docs/troubleshooting/permission-prompts.md)
+- [点击登录没反应或登录失败](docs/troubleshooting/login-failed.md)
+- [无法读取 PDF、Excel、Word 或图片](docs/troubleshooting/cannot-read-files.md)
+- [任务一直执行、卡住或无响应](docs/troubleshooting/task-stuck.md)
+- [生成的 Word、Excel、PPT 文件打不开](docs/troubleshooting/generated-file-cannot-open.md)
+- [更新或重启后工作空间不见了](docs/troubleshooting/workspace-missing-after-update.md)
+- [任务执行前总是询问权限](docs/troubleshooting/permission-prompts.md)
 
 ## 内容可信度
 
 每篇教程都必须标注验证等级：
 
-- **A：已实测**——在当前版本完整执行，并记录验证日期。
-- **B：来源核对**——根据官方文档及可靠公开来源核对，但尚未完整实测。
+- **A：已实测**——在当前版本完整执行，并记录验证日期；
+- **B：来源核对**——根据官方文档及可靠公开来源核对，但尚未完整实测；
 - **C：自动草稿**——由自动化生成，仅保留在 PR 或 `drafts/`，不得直接发布。
 
-项目不允许把“来源核对”写成“亲测有效”，也不允许模型虚构按钮、路径、版本、截图或执行结果。
+项目不允许把“来源核对”写成“亲测有效”，也不允许模型虚构按钮、路径、版本、截图、积分消耗或执行结果。
 
 ## 自动化维护方式
 
@@ -53,7 +87,7 @@
 3. 建立来源证据包；
 4. 生成 Markdown 草稿；
 5. 执行格式、来源、链接和重复度检查；
-6. 创建独立分支和 Pull Request；
+6. 创建独立分支和 Draft Pull Request；
 7. **不得自动合并到 `main`**。
 
 具体规则见 [SKILL.md](SKILL.md) 和 [HERMES.md](HERMES.md)。
