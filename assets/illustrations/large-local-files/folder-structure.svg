@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">处理本地大文件时推荐的工作目录结构</title>
+  <desc id="desc">展示 input、work、checkpoint、output 和 logs 五个目录，以及原文件不动、结果可追溯的原则。</desc>
+  <rect width="1100" height="600" rx="28" fill="#F7F8FC"/>
+  <text x="550" y="55" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#172033">先把文件放对位置，再让 WorkBuddy 开始</text>
+  <text x="550" y="88" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6475">一个任务一个目录，原文件副本和处理结果分开保存</text>
+
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="80" y="125" width="940" height="400" rx="24" fill="white" stroke="#D7DCE5" stroke-width="2"/>
+
+    <g transform="translate(120,160)">
+      <path d="M0 22 h52 l18 20 h250 v78 H0z" fill="#E8F1FF" stroke="#7EADEF" stroke-width="2"/>
+      <text x="22" y="79" font-size="24" font-weight="700" fill="#204C86">large-file-job/</text>
+      <text x="22" y="105" font-size="14" fill="#49617E">本次任务的独立工作目录</text>
+    </g>
+
+    <path d="M180 282 V467" stroke="#AEB6C3" stroke-width="3"/>
+    <path d="M180 310 H230 M180 380 H230 M180 450 H230" stroke="#AEB6C3" stroke-width="3"/>
+
+    <g transform="translate(230,270)">
+      <rect width="270" height="80" rx="16" fill="#FFF1E8" stroke="#E5A06F" stroke-width="2"/>
+      <text x="22" y="34" font-size="22" font-weight="700" fill="#7A3C12">input/</text>
+      <text x="22" y="61" font-size="15" fill="#6A5142">原始大文件的副本，只读使用</text>
+    </g>
+
+    <g transform="translate(230,360)">
+      <rect width="270" height="80" rx="16" fill="#F1ECFF" stroke="#A894E2" stroke-width="2"/>
+      <text x="22" y="34" font-size="22" font-weight="700" fill="#4A358A">work/</text>
+      <text x="22" y="61" font-size="15" fill="#5B5270">分块、转码、临时文件和中间结果</text>
+    </g>
+
+    <g transform="translate(230,450)">
+      <rect width="270" height="80" rx="16" fill="#E9F8F7" stroke="#79C3BE" stroke-width="2"/>
+      <text x="22" y="34" font-size="22" font-weight="700" fill="#17645F">checkpoint/</text>
+      <text x="22" y="61" font-size="15" fill="#44635F">已完成批次、失败位置和续跑信息</text>
+    </g>
+
+    <g transform="translate(555,270)">
+      <rect width="420" height="110" rx="18" fill="#ECF8EF" stroke="#84C895" stroke-width="2"/>
+      <text x="26" y="40" font-size="24" font-weight="700" fill="#245F34">output/</text>
+      <text x="26" y="70" font-size="16" fill="#41634A">最终报告、合并文件、图表和交付物</text>
+      <text x="26" y="94" font-size="14" font-weight="700" fill="#2F7B43">只放确认过的结果</text>
+    </g>
+
+    <g transform="translate(555,405)">
+      <rect width="420" height="110" rx="18" fill="#FFF7E8" stroke="#E3BE6E" stroke-width="2"/>
+      <text x="26" y="40" font-size="24" font-weight="700" fill="#76510D">logs/</text>
+      <text x="26" y="70" font-size="16" fill="#6A5A3C">文件清单、批次清单、错误记录、处理说明</text>
+      <text x="26" y="94" font-size="14" font-weight="700" fill="#9A6A13">以后能查清“处理了什么”</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="80" y="545" width="455" height="38" rx="19" fill="#C9505B"/>
+    <text x="307.5" y="570" text-anchor="middle" font-size="16" font-weight="700" fill="white">原文件不要直接交给批处理修改</text>
+    <rect x="565" y="545" width="455" height="38" rx="19" fill="#248E87"/>
+    <text x="792.5" y="570" text-anchor="middle" font-size="16" font-weight="700" fill="white">每一批都留下记录，失败后不用重来</text>
+  </g>
+</svg>
