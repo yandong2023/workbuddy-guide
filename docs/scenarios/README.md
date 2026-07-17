@@ -25,10 +25,13 @@
 | 文档与文件处理 | 行政、助理、所有职场人 | [文档与文件](documents-and-files/README.md) | P0 |
 | 数据、表格与汇报 | 运营、销售、财务、管理者 | [数据与报表](data-and-reporting/README.md) | P0 |
 | 会议与项目协作 | 项目经理、产品、团队负责人 | [会议与项目](meetings-and-projects/README.md) | P0 |
+| 产品、需求与设计协作 | 产品经理、设计师、创业者、研发 | [产品与设计](product-and-design/README.md) | P1 |
 | 调研与决策支持 | 产品、市场、创业者、咨询 | [调研与分析](research-and-analysis/README.md) | P0 |
 | 内容、品牌与营销 | 运营、市场、自媒体、品牌 | [营销与内容](marketing-and-content/README.md) | P0 |
 | 销售、客户与服务 | 销售、客服、客户成功 | [销售与客户](sales-and-customer/README.md) | P1 |
 | 人事、行政与财务 | HR、行政、财务、管理者 | [HR、行政与财务](hr-admin-finance/README.md) | P1 |
+| 业务运营、采购与供应链 | 运营、采购、门店、仓储、交付 | [运营与供应链](operations-and-supply-chain/README.md) | P1 |
+| 管理、战略与团队领导 | 管理者、部门负责人、创业者 | [管理与领导](management-and-leadership/README.md) | P1 |
 | 自动化、连接器与远程办公 | 所有重复工作岗位 | [自动化与集成](automation-and-integrations/README.md) | P0 |
 | 开发、IT 与本地应用 | 开发者、IT、独立开发者 | [开发与 IT](development-and-it/README.md) | P1 |
 | 法务、合同与合规 | 法务、采购、销售、管理者 | [法务与合规](legal-and-compliance/README.md) | P1 |
@@ -91,8 +94,10 @@
 - 项目经理工作流；
 - HR 招聘与员工运营工作流；
 - 财务助理与经营分析工作流；
+- 业务运营、采购和供应链工作流；
 - 客服与客户成功工作流；
 - 法务与合同管理工作流；
+- 团队管理者和部门负责人工作流；
 - 创业者/独立开发者工作流；
 - 教师、研究人员和学生工作流；
 - 个人知识管理和跨平台办公工作流。
