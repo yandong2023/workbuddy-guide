@@ -20,8 +20,8 @@
 
 ### 办公场景
 
-- [用 WorkBuddy 分析 Excel：教程模板](docs/office/excel-analysis.md)
-- [用 WorkBuddy 制作 PPT：教程模板](docs/office/create-ppt.md)
+- [用 WorkBuddy 分析 Excel](docs/office/excel-analysis.md)
+- [用 WorkBuddy 制作 PPT](docs/office/create-ppt.md)
 
 ### 自动化与 Skills
 
@@ -60,16 +60,9 @@
 
 ## 参与贡献
 
-欢迎提交：
+欢迎提交新教程、旧教程更新、错误修复、真实使用截图、失败案例和可靠信息源。请先阅读 [贡献指南](CONTRIBUTING.md)。
 
-- 新教程；
-- 旧教程更新；
-- 错误修复；
-- 真实使用截图；
-- 失败案例和解决方法；
-- 新的可靠信息源。
-
-请先阅读 [贡献指南](CONTRIBUTING.md)。教程正文应当是原创整理或在授权范围内使用，不得大段搬运第三方内容。
+教程正文应当是原创整理或在授权范围内使用，不得大段搬运第三方内容。
 
 ## 项目结构
 
