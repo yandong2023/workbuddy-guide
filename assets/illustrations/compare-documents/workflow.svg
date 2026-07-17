@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <rect width="1200" height="420" fill="#f8fafc"/>
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" fill="#0f172a" font-weight="700">多文档对比：先建证据，再做结论</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(30,110)"><rect width="170" height="120" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="85" y="44" font-size="22" fill="#1e3a8a" font-weight="700">1 文件清单</text><text x="85" y="78" font-size="16" fill="#334155">确认版本与范围</text><text x="85" y="103" font-size="16" fill="#334155">不比较正文</text></g>
+    <g transform="translate(230,110)"><rect width="170" height="120" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/><text x="85" y="44" font-size="22" fill="#5b21b6" font-weight="700">2 比较维度</text><text x="85" y="78" font-size="16" fill="#334155">章节、数字、责任</text><text x="85" y="103" font-size="16" fill="#334155">先计划后执行</text></g>
+    <g transform="translate(430,110)"><rect width="170" height="120" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="85" y="44" font-size="22" fill="#166534" font-weight="700">3 提取证据</text><text x="85" y="78" font-size="16" fill="#334155">段落编号与页码</text><text x="85" y="103" font-size="16" fill="#334155">保留原文位置</text></g>
+    <g transform="translate(630,110)"><rect width="170" height="120" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="85" y="44" font-size="22" fill="#92400e" font-weight="700">4 差异矩阵</text><text x="85" y="78" font-size="16" fill="#334155">新增、删除、冲突</text><text x="85" y="103" font-size="16" fill="#334155">不替用户裁决</text></g>
+    <g transform="translate(830,110)"><rect width="170" height="120" rx="18" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text x="85" y="44" font-size="22" fill="#991b1b" font-weight="700">5 风险复核</text><text x="85" y="78" font-size="16" fill="#334155">金额、日期、责任</text><text x="85" y="103" font-size="16" fill="#334155">人工确认</text></g>
+    <g transform="translate(1030,110)"><rect width="140" height="120" rx="18" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/><text x="70" y="44" font-size="22" fill="#075985" font-weight="700">6 建议稿</text><text x="70" y="78" font-size="16" fill="#334155">生成新版本</text><text x="70" y="103" font-size="16" fill="#334155">不覆盖原文</text></g>
+  </g>
+  <g stroke="#64748b" stroke-width="4" fill="none"><path d="M200 170h30"/><path d="M400 170h30"/><path d="M600 170h30"/><path d="M800 170h30"/><path d="M1000 170h30"/></g>
+  <g fill="#64748b"><polygon points="225,164 237,170 225,176"/><polygon points="425,164 437,170 425,176"/><polygon points="625,164 637,170 625,176"/><polygon points="825,164 837,170 825,176"/><polygon points="1025,164 1037,170 1025,176"/></g>
+  <rect x="120" y="290" width="960" height="78" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="600" y="323" text-anchor="middle" font-size="19" font-family="Arial, sans-serif" fill="#0f172a" font-weight="700">核心原则</text>
+  <text x="600" y="350" text-anchor="middle" font-size="17" font-family="Arial, sans-serif" fill="#475569">每条差异必须能回到原文件和原始位置；不确定内容统一标记“待确认”</text>
+</svg>
