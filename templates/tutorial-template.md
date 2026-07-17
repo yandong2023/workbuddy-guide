@@ -16,7 +16,7 @@ recommended_model: auto
 required_skills: []
 required_connectors: []
 visual_assets:
-  - ../../assets/illustrations/example/workflow.svg
+  - ../assets/illustrations/example/workflow.svg
 sources:
   - https://example.com/official-source
 research_pack: drafts/research-packs/example.yaml
@@ -30,7 +30,7 @@ research_pack: drafts/research-packs/example.yaml
 
 说明用户的真实目标、最终交付物，以及为什么普通的一句话容易失败。
 
-![任务整体流程](../../assets/illustrations/example/workflow.svg)
+![任务整体流程](../assets/illustrations/example/workflow.svg)
 
 ## 适合谁
 
