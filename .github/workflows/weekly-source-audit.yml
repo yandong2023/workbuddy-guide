@@ -11,6 +11,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,10 +23,11 @@ jobs:
 
       - name: Check source links
         id: audit
-        continue-on-error: true
         run: |
+          set +e
           python scripts/check_sources.py > source-audit.md
           status=$?
+          set -e
           cat source-audit.md
           cat source-audit.md >> "$GITHUB_STEP_SUMMARY"
           echo "exit_code=$status" >> "$GITHUB_OUTPUT"
