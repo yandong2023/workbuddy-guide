@@ -2,11 +2,15 @@
 
 适合产品经理、设计师、创业者、业务负责人和研发团队。
 
+## 已发布
+
+- ✅ [把用户反馈整理成产品需求候选](feedback-to-requirements.md)
+
 ## P1 内容计划
 
 | 主题 | 状态 | 重点内容 | 计划路径 |
 |---|---|---|---|
-| 用户反馈转需求列表 | 🔵 调研类来源可复用 | 原话、问题、频次、影响、证据 | `feedback-to-requirements.md` |
+| 用户反馈转需求列表 | ✅ 已发布 | 原话、问题、频次、影响、证据 | [`feedback-to-requirements.md`](feedback-to-requirements.md) |
 | PRD 初稿 | ⚪ 待研究 | 背景、目标、用户、流程、验收、非目标 | `prd-draft.md` |
 | 需求拆分和优先级 | ⚪ 待研究 | 用户价值、成本、风险、依赖、证据 | `requirements-prioritization.md` |
 | 用户故事和验收标准 | ⚪ 待研究 | 角色、目标、价值、边界和异常 | `user-stories.md` |

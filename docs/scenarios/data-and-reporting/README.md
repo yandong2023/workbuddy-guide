@@ -7,13 +7,14 @@
 - ✅ [分析 Excel](../../office/excel-analysis.md)
 - ✅ [制作 PPT](../../office/create-ppt.md)
 - ✅ [处理大型 Excel/CSV](../../office/process-large-local-files.md)
+- ✅ [合并多份 Excel：字段对齐、去重与自动汇总](merge-excel-files.md)
 
 ## P0：优先完善
 
 | 主题 | 状态 | 重点内容 | 计划路径 |
 |---|---|---|---|
 | Excel 数据清洗完整教程 | 🔵 官方有案例 | 空值、重复、格式、异常值、保留原表 | `clean-excel-data.md` |
-| 多份 Excel 合并 | 🔵 官方和社区有来源 | 字段映射、重复去除、来源列、失败表 | `merge-excel-files.md` |
+| 多份 Excel 合并 | ✅ 已发布 | 字段映射、重复去除、来源列、失败表 | [`merge-excel-files.md`](merge-excel-files.md) |
 | 销售数据经营分析 | 🔵 社区有来源 | 月份、产品、区域、客户、毛利 | `sales-analysis.md` |
 | 自动生成可视化图表 | 🔵 官方有案例 | 图表选择、单位、口径、错误图表 | `create-charts.md` |
 | 数据报告转 PPT | 🔵 官方有案例 | 先大纲、再图表、结论来源 | `data-to-ppt.md` |

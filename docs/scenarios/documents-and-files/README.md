@@ -8,12 +8,13 @@
 - ✅ [批量重命名文件](../../office/batch-rename-files.md)
 - ✅ [处理本地电脑大文件](../../office/process-large-local-files.md)
 - ✅ [工作目录和文件安全](../../getting-started/workspace-and-files.md)
+- ✅ [对比多份 Word/PDF：差异、遗漏与冲突](compare-documents.md)
 
 ## P0：优先完善
 
 | 主题 | 状态 | 重点内容 | 计划路径 |
 |---|---|---|---|
-| 多份 Word/PDF 对比差异 | 🔵 已有来源 | 版本差异、遗漏、冲突、来源定位 | `compare-documents.md` |
+| 多份 Word/PDF 对比差异 | ✅ 已发布 | 版本差异、遗漏、冲突、来源定位 | [`compare-documents.md`](compare-documents.md) |
 | 多文档合并成一份报告 | 🔵 已有来源 | 去重、统一结构、保留出处 | `merge-documents.md` |
 | Word 正式文档生成与二次修改 | 🔵 官方有案例 | 通知、制度、方案、申请、汇报 | `create-edit-word.md` |
 | 扫描 PDF 与图片 OCR | 🔵 官方提到文件识别 | OCR 小样、失败页、校对 | `ocr-scanned-documents.md` |
