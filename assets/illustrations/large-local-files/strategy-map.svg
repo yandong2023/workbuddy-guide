@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670" role="img" aria-labelledby="title desc">
+  <title id="title">不同大文件类型的推荐处理策略</title>
+  <desc id="desc">分别展示大型 PDF、Excel 或 CSV、音视频以及大量文件的分批处理方法。</desc>
+  <rect width="1200" height="670" rx="28" fill="#F7F8FC"/>
+  <text x="600" y="55" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#172033">不同大文件，拆分方法也不同</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#5B6475">先识别文件类型，再选择最稳妥的分批方式</text>
+
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <g transform="translate(70,125)">
+      <rect width="500" height="220" rx="24" fill="white" stroke="#8AB6FF" stroke-width="2"/>
+      <rect width="500" height="56" rx="24" fill="#E8F1FF"/>
+      <rect y="34" width="500" height="22" fill="#E8F1FF"/>
+      <text x="28" y="37" font-size="23" font-weight="700" fill="#204C86">📄 大型 PDF / 扫描文档</text>
+      <text x="28" y="92" font-size="17" font-weight="700" fill="#172033">推荐拆法</text>
+      <text x="28" y="123" font-size="16" fill="#566174">按目录、章节或页码范围分组</text>
+      <text x="28" y="151" font-size="16" fill="#566174">每批先提取文字，再生成局部摘要</text>
+      <text x="28" y="179" font-size="16" fill="#566174">最后合并，并抽查页码和数字</text>
+      <rect x="290" y="87" width="178" height="92" rx="16" fill="#F4F7FC"/>
+      <text x="379" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#3977D7">示例</text>
+      <text x="379" y="148" text-anchor="middle" font-size="14" fill="#566174">每批 30—50 页</text>
+      <text x="379" y="171" text-anchor="middle" font-size="14" fill="#566174">以实测结果调整</text>
+    </g>
+
+    <g transform="translate(630,125)">
+      <rect width="500" height="220" rx="24" fill="white" stroke="#8BCB9A" stroke-width="2"/>
+      <rect width="500" height="56" rx="24" fill="#ECF8EF"/>
+      <rect y="34" width="500" height="22" fill="#ECF8EF"/>
+      <text x="28" y="37" font-size="23" font-weight="700" fill="#245F34">📊 大型 Excel / CSV</text>
+      <text x="28" y="92" font-size="17" font-weight="700" fill="#172033">推荐拆法</text>
+      <text x="28" y="123" font-size="16" fill="#566174">先读字段、总行数和少量样本</text>
+      <text x="28" y="151" font-size="16" fill="#566174">按行数、日期或业务分区分批处理</text>
+      <text x="28" y="179" font-size="16" fill="#566174">每批输出统计，再统一汇总</text>
+      <rect x="290" y="87" width="178" height="92" rx="16" fill="#F4FAF5"/>
+      <text x="379" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#3B9A58">关键要求</text>
+      <text x="379" y="148" text-anchor="middle" font-size="14" fill="#566174">不要一次全读入内存</text>
+      <text x="379" y="171" text-anchor="middle" font-size="14" fill="#566174">原文件保持不变</text>
+    </g>
+
+    <g transform="translate(70,385)">
+      <rect width="500" height="220" rx="24" fill="white" stroke="#A894E2" stroke-width="2"/>
+      <rect width="500" height="56" rx="24" fill="#F1ECFF"/>
+      <rect y="34" width="500" height="22" fill="#F1ECFF"/>
+      <text x="28" y="37" font-size="23" font-weight="700" fill="#4A358A">🎧 长音频 / 大视频</text>
+      <text x="28" y="92" font-size="17" font-weight="700" fill="#172033">推荐拆法</text>
+      <text x="28" y="123" font-size="16" fill="#566174">先提取时长、编码和字幕信息</text>
+      <text x="28" y="151" font-size="16" fill="#566174">按固定时长切段，逐段转写或翻译</text>
+      <text x="28" y="179" font-size="16" fill="#566174">保留时间戳，最后合并并去重</text>
+      <rect x="290" y="87" width="178" height="92" rx="16" fill="#F7F4FD"/>
+      <text x="379" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#7253C7">隐私提醒</text>
+      <text x="379" y="148" text-anchor="middle" font-size="14" fill="#566174">确认是否上传第三方</text>
+      <text x="379" y="171" text-anchor="middle" font-size="14" fill="#566174">再处理正式资料</text>
+    </g>
+
+    <g transform="translate(630,385)">
+      <rect width="500" height="220" rx="24" fill="white" stroke="#E5B76D" stroke-width="2"/>
+      <rect width="500" height="56" rx="24" fill="#FFF5E6"/>
+      <rect y="34" width="500" height="22" fill="#FFF5E6"/>
+      <text x="28" y="37" font-size="23" font-weight="700" fill="#794800">🗂 成千上万个文件</text>
+      <text x="28" y="92" font-size="17" font-weight="700" fill="#172033">推荐拆法</text>
+      <text x="28" y="123" font-size="16" fill="#566174">先生成文件清单，不直接移动和改名</text>
+      <text x="28" y="151" font-size="16" fill="#566174">按扩展名、日期、大小或目录分组</text>
+      <text x="28" y="179" font-size="16" fill="#566174">每次处理一组，并保存前后映射</text>
+      <rect x="290" y="87" width="178" height="92" rx="16" fill="#FFFAF0"/>
+      <text x="379" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#D88A19">先预览</text>
+      <text x="379" y="148" text-anchor="middle" font-size="14" fill="#566174">确认列表后再执行</text>
+      <text x="379" y="171" text-anchor="middle" font-size="14" fill="#566174">保留恢复清单</text>
+    </g>
+  </g>
+
+  <rect x="245" y="625" width="710" height="30" rx="15" fill="#172033"/>
+  <text x="600" y="646" text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="white">图中的批次大小只是起点：先小样实测，再按电脑性能和文件复杂度调整</text>
+</svg>
