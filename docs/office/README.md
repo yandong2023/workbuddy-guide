@@ -10,6 +10,7 @@
 - [整理会议纪要](meeting-minutes.md)
 - [生成周报](write-weekly-report.md)
 - [批量重命名文件](batch-rename-files.md)
+- [处理本地电脑大文件：分批、分块与断点续跑](process-large-local-files.md)
 
 ## 推荐工作方式
 
