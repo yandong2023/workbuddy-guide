@@ -31,6 +31,7 @@ SECRET_PATTERNS = {
     ),
 }
 FORBIDDEN_NAMES = {".env", ".env.local", ".env.production"}
+NON_TUTORIAL_DOC_DIRECTORIES = {"standards"}
 
 
 def parse_front_matter(text: str) -> dict[str, str]:
@@ -49,9 +50,18 @@ def parse_front_matter(text: str) -> dict[str, str]:
     return result
 
 
+def is_tutorial_markdown(relative: Path) -> bool:
+    """Return whether a Markdown file should follow tutorial front-matter rules."""
+    if relative.name == "README.md":
+        return False
+    if relative.parts and relative.parts[0] == "docs":
+        return len(relative.parts) < 2 or relative.parts[1] not in NON_TUTORIAL_DOC_DIRECTORIES
+    if relative.parts and relative.parts[0] == "drafts":
+        return True
+    return False
+
+
 def validate_tutorial(path: Path, text: str, errors: list[str]) -> None:
-    if path.name == "README.md":
-        return
     metadata = parse_front_matter(text)
     missing = sorted(REQUIRED_FIELDS - metadata.keys())
     if missing:
@@ -71,7 +81,7 @@ def validate_tutorial(path: Path, text: str, errors: list[str]) -> None:
             errors.append(f"{relative}: automated drafts cannot be published under docs/")
         if status == "draft":
             errors.append(f"{relative}: draft status cannot be published under docs/")
-    if relative.parts[0] == "drafts" and path.name != "README.md" and status != "draft":
+    if relative.parts[0] == "drafts" and status != "draft":
         errors.append(f"{relative}: files under drafts/ must use status: draft")
 
     if verification == "source-verified" and "尚未完成本项目" not in text:
@@ -121,7 +131,7 @@ def main() -> int:
 
         if path.suffix.lower() == ".md":
             validate_links(path, text, errors)
-            if relative.parts and relative.parts[0] in {"docs", "drafts"}:
+            if is_tutorial_markdown(relative):
                 validate_tutorial(path, text, errors)
 
     if errors:
