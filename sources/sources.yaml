@@ -1,0 +1,105 @@
+version: 1
+updated_at: "2026-07-17"
+
+principles:
+  - official_first
+  - collect_metadata_not_full_text
+  - respect_robots_and_platform_terms
+  - cite_original_source
+  - third_party_requires_rewrite_and_fact_check
+  - conflicting_information_requires_human_review
+
+sources:
+  - id: workbuddy_official_docs
+    name: WorkBuddy 官方文档
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/workbuddy/
+    language: zh-CN/en
+    priority: 100
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_quickstart
+    name: WorkBuddy Quick Start
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/workbuddy/Quickstart
+    language: en
+    priority: 95
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_faq
+    name: WorkBuddy FAQ
+    type: official_faq
+    url: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA
+    language: en
+    priority: 95
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_permission_modes
+    name: WorkBuddy Permission Modes
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes
+    language: en
+    priority: 95
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_skills_market
+    name: WorkBuddy Skill Marketplace
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market
+    language: en
+    priority: 95
+    enabled: true
+    check_frequency: weekly
+
+  - id: workbuddy_create_skills_zh
+    name: 创建自己的 Skills
+    type: official_documentation
+    url: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
+    language: zh-CN
+    priority: 95
+    enabled: true
+    check_frequency: weekly
+
+  - id: github_workbuddy_search
+    name: GitHub WorkBuddy 相关项目搜索
+    type: community_code
+    query: "WorkBuddy skill tutorial"
+    priority: 60
+    enabled: true
+    check_frequency: weekly
+    manual_review_required: true
+
+  - id: public_web_search
+    name: 公开网页问题与教程搜索
+    type: discovery_only
+    queries:
+      - "WorkBuddy 教程"
+      - "WorkBuddy 怎么用"
+      - "WorkBuddy 报错"
+      - "WorkBuddy Skill"
+      - "WorkBuddy Excel"
+      - "WorkBuddy PPT"
+    priority: 40
+    enabled: true
+    check_frequency: weekly
+    manual_review_required: true
+
+collection_policy:
+  save:
+    - title
+    - url
+    - source_type
+    - author
+    - published_at
+    - discovered_at
+    - short_summary
+    - relevant_claims
+  do_not_save:
+    - full_paywalled_article
+    - full_video_transcript
+    - personal_information
+    - authentication_data

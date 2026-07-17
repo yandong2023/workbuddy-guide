@@ -1,0 +1,93 @@
+version: 1
+
+verification_levels:
+  tested:
+    label: "A：已实测"
+    requirements:
+      - verified_at
+      - tested_platform
+      - reproducible_steps
+      - result_or_screenshot
+  source-verified:
+    label: "B：来源核对"
+    requirements:
+      - official_source
+      - explicit_not_tested_notice
+  automated-draft:
+    label: "C：自动草稿"
+    requirements:
+      - status_draft
+      - research_pack
+      - human_review_before_publish
+
+required_front_matter:
+  - title
+  - description
+  - category
+  - difficulty
+  - created_at
+  - updated_at
+  - verification
+  - status
+  - sources
+
+allowed_statuses:
+  - published
+  - needs-review
+  - draft
+  - outdated
+
+allowed_categories:
+  - getting-started
+  - office
+  - automation
+  - skills
+  - troubleshooting
+
+publishing_rules:
+  docs_directory:
+    forbidden_verification:
+      - automated-draft
+    forbidden_status:
+      - draft
+  drafts_directory:
+    required_status:
+      - draft
+  automatic_merge: false
+  automatic_publication: false
+
+source_priority:
+  - official_documentation
+  - official_faq
+  - official_release_notes
+  - first_party_demo
+  - reproducible_community_tutorial
+  - community_discussion
+  - search_snippet
+
+high_risk_topics:
+  - deleting_files
+  - overwriting_files
+  - full_access
+  - sending_messages
+  - publishing_content
+  - payment
+  - account_security
+  - personal_data
+
+forbidden_claims_without_evidence:
+  - "亲测有效"
+  - "百分之百成功"
+  - "完全安全"
+  - "不会泄露"
+  - "官方推荐"
+
+forbidden_public_content:
+  - secrets
+  - tokens
+  - cookies
+  - raw_logs
+  - customer_identity
+  - order_numbers
+  - production_database_credentials
+  - copyrighted_full_text

@@ -1,0 +1,37 @@
+topic: ""
+slug: ""
+created_at: "YYYY-MM-DD"
+researcher: "automation"
+
+user_problem:
+  description: ""
+  target_audience: []
+  expected_outcome: ""
+
+score:
+  user_value: 0
+  demand: 0
+  content_gap: 0
+  freshness: 0
+  verifiability: 0
+  total: 0
+
+official_sources:
+  - url: ""
+    title: ""
+    published_at: null
+    accessed_at: "YYYY-MM-DD"
+    relevant_claims: []
+
+community_sources: []
+
+verified_facts: []
+conflicting_information: []
+needs_manual_test: []
+version_sensitive_steps: []
+copyright_risks: []
+privacy_and_security_risks: []
+
+recommended_action: "reject|candidate|draft"
+recommended_verification: "source-verified|tested"
+notes: ""
