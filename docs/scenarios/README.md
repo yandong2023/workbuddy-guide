@@ -31,6 +31,9 @@
 | 人事、行政与财务 | HR、行政、财务、管理者 | [HR、行政与财务](hr-admin-finance/README.md) | P1 |
 | 自动化、连接器与远程办公 | 所有重复工作岗位 | [自动化与集成](automation-and-integrations/README.md) | P0 |
 | 开发、IT 与本地应用 | 开发者、IT、独立开发者 | [开发与 IT](development-and-it/README.md) | P1 |
+| 法务、合同与合规 | 法务、采购、销售、管理者 | [法务与合规](legal-and-compliance/README.md) | P1 |
+| 个人效率与知识管理 | 所有知识工作者 | [个人效率与知识](personal-productivity-and-knowledge/README.md) | P1 |
+| 教学、学习与研究 | 教师、培训、学生、研究人员 | [教学与研究](education-and-research/README.md) | P1 |
 | 安全、权限与故障解决 | 所有用户 | [安全与排障](security-and-troubleshooting/README.md) | P0 |
 
 ## 第一阶段：必须优先完成的 30 篇
@@ -89,8 +92,10 @@
 - HR 招聘与员工运营工作流；
 - 财务助理与经营分析工作流；
 - 客服与客户成功工作流；
+- 法务与合同管理工作流；
 - 创业者/独立开发者工作流；
-- 教师、研究人员和学生工作流。
+- 教师、研究人员和学生工作流；
+- 个人知识管理和跨平台办公工作流。
 
 ## 教程生产顺序
 
